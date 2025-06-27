@@ -112,7 +112,9 @@
 							<h2>hi <span>,</span> i am <br>Devi Raksitha<span>.</span>   </h2>
 							<p><span class="typed" data-typed-items="AI Enthusiast, Web Developer"></span></p>
 
-							<a href="assets/download/Devi_Raksitha_R.pdf" download>download resume</a>
+							<a href="assets/download/Devi_Raksitha_R.pdf" download class="btn btn-primary" style="margin-right: 10px;">Download Resume</a>
+							<a href="#" id="viewResumeBtn" class="btn btn-primary" style="margin-right: 10px;">View Resume</a>
+
 						</div><!--/.header-text-->
 					</div><!--/.col-->
 				</div><!-- /.row-->
@@ -120,6 +122,14 @@
 
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
+		<!-- Resume Modal -->
+		<div id="resumeModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999;">
+		<div style="position:relative; width:90%; height:90%; margin:5% auto; background:#fff; border-radius:10px; padding:15px;">
+			<span id="closeResume" style="position:absolute; top:10px; right:20px; font-size:30px; cursor:pointer;">&times;</span>
+			<iframe src="assets/download/Devi_Raksitha_R.pdf" style="width:100%; height:100%; border:none;"></iframe>
+		</div>
+		</div>
+
 
 		<!--about start -->
 		<section id="about" class="about">
@@ -163,21 +173,11 @@
 								<div class="about-list-icon">
 									<ul>
 										<li>
-											<a href="#">
-												<i  class="fa fa-facebook" aria-hidden="true"></i>
+											<a href="https://github.com/Raksitha-R">
+												<i  class="fa fa-github" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
-										<li>
-											<a href="#">
-												<i  class="fa fa-dribbble" aria-hidden="true"></i>
-											</a>
-											
-										</li><!-- / li -->
-										<li>
-											<a href="#">
-												<i  class="fa fa-twitter" aria-hidden="true"></i>
-											</a>
-											
+										
 										</li><!-- / li -->
 										<li>
 											<a href="https://www.linkedin.com/in/devi-raksitha-r-ba4960301" target="_blank">
@@ -185,7 +185,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="https://www.instagram.com/raksitha_raman/?hl=en">
 												<i  class="fa fa-instagram" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
@@ -451,74 +451,61 @@
 		</section><!--/.experience-->
 		<!--experience end -->
 
-
 		<!--portfolio start -->
 		<section id="portfolio" class="portfolio">
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2>Projects</h2>
+		<div class="portfolio-details">
+			<div class="section-heading text-center">
+			<h2>Projects</h2>
+			</div>
+			<div class="container">
+			<div class="portfolio-content">
+				<div class="isotope">
+				<div class="row">
+					<div class="col-sm-4">
+					<a href="project.html?project=elearning">
+						<div class="item">
+						<img src="assets/images/portfolio/elearning.jpg" alt="elearning" />
+						<div class="isotope-overlay">Gen AI/web development</div>
+						</div>
+					</a>
+					<a href="project.html?project=cloudpred">
+						<div class="item">
+						<img src="assets/images/portfolio/cloudpred.jpg" alt="cloudpred" />
+						<div class="isotope-overlay">Deep Learning</div>
+						</div>
+					</a>
+					</div>
+					<div class="col-sm-4">
+					<a href="project.html?project=fakenews">
+						<div class="item">
+						<img src="assets/images/portfolio/fakenews.jpg" alt="fakenews" />
+						<div class="isotope-overlay">AI/ML</div>
+						</div>
+					</a>
+					</div>
+					<div class="col-sm-4">
+					<a href="project.html?project=examhall">
+						<div class="item">
+						<img src="assets/images/portfolio/examhall.jpg" alt="examhall" />
+						<div class="isotope-overlay">web development</div>
+						</div>
+					</a>
+					<a href="project.html?project=petadoption">
+						<div class="item">
+						<img src="assets/images/portfolio/petadoption.png" alt="petadoption" />
+						<div class="isotope-overlay">web development</div>
+						</div>
+					</a>
+					</div>
 				</div>
-				<div class="container">
-					<div class="portfolio-content">
-						<div class="isotope">
-							<div class="row">
-
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/elearning.jpg" alt="elearning"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												Gen AI/web development
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									<div class="item">
-										<img src="assets/images/portfolio/cloudpred.jpg" alt="cloudpred"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												Deep Learning
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/fakenews.jpg" alt="fakenews"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												AI/ML
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/examhall.jpg" alt="examhall"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												web development
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									<div class="item">
-										<img src="assets/images/portfolio/petadoption.png" alt="petadoption"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												web development
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-							</div><!-- /.row -->
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
-				</div><!--/.container-->
-			</div><!--/.portfolio-details-->
-
-		</section><!--/.portfolio-->
+				</div><!--/.isotope-->
+			</div><!--/.gallery-content-->
+			</div><!--/.container-->
+		</div><!--/.portfolio-details-->
+		</section>
 		<!--portfolio end -->
+
+
 		
 		<!-- achievements start -->
 		<section id="Acheivements" class="acheivements">
@@ -630,16 +617,6 @@
 		</section>
 		<!-- achievements end -->
 		
-		<div id="projectModal" class="modal">
-		<div class="modal-content">
-			<span class="close">&times;</span>
-			<h3 id="modalTitle">Project Title</h3>
-			<p id="modalDesc">Project description goes here.</p>
-			<a id="githubLink" href="#" target="_blank">
-			<img src="assets/logo/git.webp" alt="GitHub" style="width:30px;height:30px;">
-			</a>
-		</div>
-		</div>
 				
 		<!-- contact start -->
 		<section id="contact" class="contact">
@@ -711,11 +688,9 @@
 					</div>
 					<div class="hm-foot-icon">
 					<ul>
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://github.com/Raksitha-R"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/devi-raksitha-r-ba4960301"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://www.instagram.com/raksitha_raman/?hl=en"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 					</div>
 				</div>
@@ -813,25 +788,7 @@
 	}
 	};
 
-	// Modal functionality
-	document.querySelectorAll('.item').forEach((item, index) => {
-	item.addEventListener('click', function () {
-		const imageAlt = item.querySelector('img').getAttribute('alt');
-		let key = "";
-		if (imageAlt.includes("fakenews")) key = "fakenews";
-		else if (imageAlt.includes("elearning")) key = "elearning";
-		else if (imageAlt.includes("cloudpred")) key = "cloudpred";
-		else if (imageAlt.includes("examhall")) key = "examhall";
-		else if (imageAlt.includes("petadoption")) key = "petadoption";
-
-		if (projectData[key]) {
-		document.getElementById("modalTitle").textContent = projectData[key].title;
-		document.getElementById("modalDesc").textContent = projectData[key].desc;
-		document.getElementById("githubLink").href = projectData[key].github;
-		document.getElementById("projectModal").style.display = "block";
-		}
-	});
-	});
+	
 
 	// Close modal
 	document.querySelector(".close").onclick = function () {
@@ -926,6 +883,22 @@
 		confirmButtonColor: '#d33'
 	});
 	});
+  });
+</script>
+<script>
+  document.getElementById("viewResumeBtn").addEventListener("click", function () {
+    document.getElementById("resumeModal").style.display = "block";
+  });
+
+  document.getElementById("closeResume").addEventListener("click", function () {
+    document.getElementById("resumeModal").style.display = "none";
+  });
+
+  window.addEventListener("click", function (e) {
+    const modal = document.getElementById("resumeModal");
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
   });
 </script>
 

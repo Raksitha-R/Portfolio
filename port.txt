@@ -1,0 +1,106 @@
+
+
+		<!--portfolio start -->
+		<section id="portfolio" class="portfolio">
+			<div class="portfolio-details">
+				<div class="section-heading text-center">
+					<h2>Projects</h2>
+				</div>
+				<div class="container">
+					<div class="portfolio-content">
+						<div class="isotope">
+							<div class="row">
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/elearning.jpg" alt="elearning"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Gen AI/web development
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="assets/images/portfolio/cloudpred.jpg" alt="cloudpred"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Deep Learning
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/fakenews.jpg" alt="fakenews"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												AI/ML
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/examhall.jpg" alt="examhall"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												web development
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="assets/images/portfolio/petadoption.png" alt="petadoption"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												web development
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+						</div><!--/.isotope-->
+					</div><!--/.gallery-content-->
+				</div><!--/.container-->
+			</div><!--/.portfolio-details-->
+
+		</section><!--/.portfolio-->
+		<!--portfolio end -->
+
+        
+		<div id="projectModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h3 id="modalTitle">Project Title</h3>
+			<p id="modalDesc">Project description goes here.</p>
+			<a id="githubLink" href="#" target="_blank">
+			<img src="assets/logo/git.webp" alt="GitHub" style="width:30px;height:30px;">
+			</a>
+		</div>
+		</div>
+        // Modal functionality
+	document.querySelectorAll('.item').forEach((item, index) => {
+	item.addEventListener('click', function () {
+		const imageAlt = item.querySelector('img').getAttribute('alt');
+		let key = "";
+		if (imageAlt.includes("fakenews")) key = "fakenews";
+		else if (imageAlt.includes("elearning")) key = "elearning";
+		else if (imageAlt.includes("cloudpred")) key = "cloudpred";
+		else if (imageAlt.includes("examhall")) key = "examhall";
+		else if (imageAlt.includes("petadoption")) key = "petadoption";
+
+		if (projectData[key]) {
+		document.getElementById("modalTitle").textContent = projectData[key].title;
+		document.getElementById("modalDesc").textContent = projectData[key].desc;
+		document.getElementById("githubLink").href = projectData[key].github;
+		document.getElementById("projectModal").style.display = "block";
+		}
+	});
+	});
+
+
+
+
+
+ 
